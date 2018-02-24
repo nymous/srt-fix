@@ -1,0 +1,19 @@
+{
+  "name": "srt-fix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "incSrt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "subtitle": "^1.1.1",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "@types/yargs": "^11.0.0"
+  }
+}
