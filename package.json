@@ -1,13 +1,13 @@
 {
   "name": "srt-fix",
   "version": "1.0.0",
-  "description": "",
-  "main": "incSrt.js",
+  "description": "CLI utility to fix problems in SRT files",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Thomas 'Nymous' Gaudin",
+  "license": "MIT",
   "dependencies": {
     "subtitle": "^1.1.1",
     "yargs": "^11.0.0"
@@ -15,5 +15,18 @@
   "devDependencies": {
     "@types/node": "^9.4.6",
     "@types/yargs": "^11.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nymous/srt-fix.git"
+  },
+  "keywords": [
+    "SRT",
+    "CLI",
+    "subtitles"
+  ],
+  "bugs": {
+    "url": "https://github.com/nymous/srt-fix/issues"
+  },
+  "homepage": "https://github.com/nymous/srt-fix#readme"
 }
