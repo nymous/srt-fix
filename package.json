@@ -4,7 +4,8 @@
   "description": "CLI utility to fix problems in SRT files",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard",
+    "test": "npm run lint"
   },
   "author": "Thomas 'Nymous' Gaudin",
   "license": "MIT",
@@ -14,7 +15,8 @@
   },
   "devDependencies": {
     "@types/node": "^9.4.6",
-    "@types/yargs": "^11.0.0"
+    "@types/yargs": "^11.0.0",
+    "standard": "^11.0.0"
   },
   "repository": {
     "type": "git",

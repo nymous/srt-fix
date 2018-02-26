@@ -13,7 +13,7 @@ const argv = require('yargs')
     group: 'General',
     describe: 'Load a file',
     nargs: 1,
-    type: 'string',
+    type: 'string'
   })
   .option('o', {
     alias: 'output',
