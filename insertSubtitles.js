@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 const readline = require('readline')
 
 /**
@@ -43,6 +44,7 @@ module.exports = {
       group: 'insert',
       describe: 'Input file path',
       nargs: 1,
+      coerce: path.resolve,
       type: 'string'
     },
     o: {
@@ -51,6 +53,7 @@ module.exports = {
       group: 'insert',
       describe: 'Output file path',
       nargs: 1,
+      coerce: path.resolve,
       type: 'string'
     },
     offset: {

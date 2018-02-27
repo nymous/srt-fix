@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 const Subtitle = require('subtitle')
 
 /**
@@ -38,6 +39,7 @@ module.exports = {
       group: 'resync',
       describe: 'Input file path',
       nargs: 1,
+      coerce: path.resolve,
       type: 'string'
     },
     o: {
@@ -46,6 +48,7 @@ module.exports = {
       group: 'resync',
       describe: 'Output file path',
       nargs: 1,
+      coerce: path.resolve,
       type: 'string'
     },
     d: {
