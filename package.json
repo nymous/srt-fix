@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "CLI utility to fix problems in SRT files",
   "main": "index.js",
+  "bin": {
+    "srt-fix": "./index.js"
+  },
   "scripts": {
     "lint": "standard",
     "test": "npm run lint"
