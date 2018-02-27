@@ -10,15 +10,12 @@ const Subtitle = require('subtitle')
  * @param {string} argv.output - Output file path
  * @param {number} argv.delay - Delay to apply to subtitles in milliseconds, positive number to make subtitles appear later
  * @param {string} [argv.start-at] - Start syncing after this timestamp; format: <code>01:27:36,624</code> If omitted it will start at <code>00:00:00,000</code>
-
  */
 function resync (argv) {
   const inputFile = argv.file
   const outputFile = argv.output
   const syncDelay = argv.delay
   const startSyncTime = Subtitle.toMS(argv['start-at'])
-
-  console.log(inputFile)
 
   const subFileContent = fs.readFileSync(inputFile, 'utf8')
   const writeStream = fs.createWriteStream(outputFile)
@@ -39,7 +36,7 @@ module.exports = {
       alias: 'file',
       demandOption: true,
       group: 'resync',
-      describe: 'Load a file',
+      describe: 'Input file path',
       nargs: 1,
       type: 'string'
     },
@@ -47,7 +44,7 @@ module.exports = {
       alias: 'output',
       demandOption: true,
       group: 'resync',
-      describe: 'Output to file',
+      describe: 'Output file path',
       nargs: 1,
       type: 'string'
     },
